@@ -179,7 +179,6 @@ header .header-contents {
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
-  border: 3px solid green;
   padding: 1% 0;
 }
 header .header-contents nav {
@@ -257,4 +256,16 @@ header .header-contents nav a:hover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  padding: 12px 0;
+  margin-right: 40px;
+  text-align: center;
+  font-size: 1.8rem;
+  background: #17A2B8;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  color: #FFFFFF;
 }
