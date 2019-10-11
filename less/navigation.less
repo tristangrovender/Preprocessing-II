@@ -3,19 +3,45 @@
 header {
   display: flex;
   border-bottom: 2px dashed #c0c0c0;
-  
+
+  @media @mobile {
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
   .header-contents {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 800px;
-      margin: 0 auto;
-      width: 100%;
-      padding: 1% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1% 0;
+
+    @media @mobile {
+      flex-direction: column;
+
+      margin: 0 5%;
+      max-width: 500px;
+    }
+
+    h1 {
+      @media @mobile {
+        margin: 15px 0;
+      }
+    }
 
     nav {
       display: flex;
       margin-right: 3%;
+
+      @media @mobile {
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        justify-content: space-around;
+      }
 
       a {
         display: flex;
@@ -25,7 +51,10 @@ header {
         color: black;
         font-size: 1.5rem;
         font-weight: bold;
-        
+
+        @media @mobile {
+          margin-left: 0;
+        }
       }
       a:hover {
         color: grey;
